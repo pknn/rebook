@@ -1,11 +1,14 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 
-import { reducer as MetadataReducer } from './features/metadataSlice';
+import { routerReducer, routerMiddleware } from '../lib/router';
+import { reducer as metadataReducer } from './features/metadataSlice';
 
 const store = configureStore({
   reducer: {
-    metadata: MetadataReducer
+    router: routerReducer,
+    metadata: metadataReducer
   },
+  middleware: getDefaultMiddleware().prepend(routerMiddleware),
   devTools: process.env.NODE_ENV !== 'production'
 });
 
