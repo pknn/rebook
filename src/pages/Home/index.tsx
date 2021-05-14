@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { push } from 'connected-react-router';
 import { connect, ConnectedProps } from 'react-redux';
 
-import { ApplicationDispatch } from '../store';
+import { ApplicationDispatch } from '../../store';
 
 type MappedPropsType = ConnectedProps<typeof connector>;
 
