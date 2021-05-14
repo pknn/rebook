@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-interface HomePageComponentProps {
+export interface HomePageComponentProps {
   handlePageLoad: () => void;
 }
 

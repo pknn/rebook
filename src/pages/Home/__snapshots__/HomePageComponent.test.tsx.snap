@@ -2,6 +2,6 @@
 
 exports[`<HomePage /> should render correctly 1`] = `
 <div>
-  Going to not found in 3 sec
+  HomePage
 </div>
 `;
