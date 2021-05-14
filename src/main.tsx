@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider as StoreProvider } from 'react-redux';
 
 import store from './store';
-import { ConnectedRouter as Router } from './lib/router';
+import { ConnectedRouter as Router } from './router';
 import App from './App';
 import './index.css';
 

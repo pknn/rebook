@@ -1,6 +1,6 @@
 import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit';
 
-import { routerReducer, routerMiddleware } from '../lib/router';
+import { routerReducer, routerMiddleware } from '../router';
 import { reducer as metadataReducer } from './features/metadataSlice';
 
 const store = configureStore({

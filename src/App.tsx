@@ -1,22 +1,17 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
 
+import RoutesMap from './router/RoutesMap';
 import Container from './lib/components/Container';
-import HomePage from './pages/Home';
-import NotFoundPage from './pages/NotFound';
+import Navigation from './lib/components/Navigation';
 
 const App: React.FC = () => {
   return (
-    <Container>
-      <Switch>
-        <Route exact path="/">
-          <HomePage />
-        </Route>
-        <Route path="*">
-          <NotFoundPage />
-        </Route>
-      </Switch>
-    </Container>
+    <>
+      <Navigation />
+      <Container>
+        <RoutesMap />
+      </Container>
+    </>
   );
 };
 
