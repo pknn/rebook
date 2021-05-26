@@ -6,12 +6,14 @@ import Navigation from 'lib/components/Navigation';
 
 const App: React.FC = () => {
   return (
-    <ErrorBoundary>
+    <>
       <Navigation />
-      <Container>
-        <Routes />
-      </Container>
-    </ErrorBoundary>
+      <ErrorBoundary>
+        <Container>
+          <Routes />
+        </Container>
+      </ErrorBoundary>
+    </>
   );
 };
 
