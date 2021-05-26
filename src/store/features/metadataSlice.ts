@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { Metadata } from '../../types/features';
+import { Metadata } from 'lib/types/metadata';
 
 const initialState: Metadata = {
   version: '1.0.0'

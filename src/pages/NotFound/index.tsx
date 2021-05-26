@@ -1,10 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Version } from 'lib/types/metadata';
 
-import { ApplicationState } from '../../store';
+import { ApplicationState } from 'store/types';
 
 interface OwnProps {
-  version: string;
+  version: Version;
 }
 
 const NotFoundPageComponent: React.FunctionComponent<OwnProps> = ({

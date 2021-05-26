@@ -1,17 +1,17 @@
 import React from 'react';
+import { ErrorBoundary } from 'react-error-boundary';
+import Container from 'lib/components/Container';
 
 import RoutesMap from './router/RoutesMap';
-import Container from './lib/components/Container';
-import Navigation from './lib/components/Navigation';
+import ErrorPage from './pages/Error';
 
 const App: React.FC = () => {
   return (
-    <>
-      <Navigation />
+    <ErrorBoundary FallbackComponent={ErrorPage}>
       <Container>
         <RoutesMap />
       </Container>
-    </>
+    </ErrorBoundary>
   );
 };
 

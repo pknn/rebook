@@ -1,10 +1,15 @@
+import { ComponentProps } from 'react';
 import { push } from 'connected-react-router';
 import { connect } from 'react-redux';
+import { ApplicationDispatch } from 'store/types';
 
 import HomePageComponent from './HomePageComponent';
-import { ApplicationDispatch } from '../../store';
 
-const mapDispatchToProps = (dispatch: ApplicationDispatch) => ({
+type HomePageComponentProps = ComponentProps<typeof HomePageComponent>;
+
+const mapDispatchToProps = (
+  dispatch: ApplicationDispatch
+): HomePageComponentProps => ({
   handlePageLoad: () => dispatch(push('/not-found'))
 });
 
