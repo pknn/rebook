@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 import HomePage from '../pages/Home';
 import NotFoundPage from '../pages/NotFound';
@@ -9,8 +9,11 @@ const RoutesMap: React.FunctionComponent = () => (
     <Route exact path="/">
       <HomePage />
     </Route>
-    <Route path="*">
+    <Route path="/not-found">
       <NotFoundPage />
+    </Route>
+    <Route path="*">
+      <Redirect to="/not-found" />
     </Route>
   </Switch>
 );

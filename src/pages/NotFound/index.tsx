@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { Version } from 'lib/types/metadata';
-
 import { ApplicationState } from 'store/types';
+import { useErrorHandler } from 'react-error-boundary';
+import { PageNotFoundError } from 'lib/types/errors';
 
 interface OwnProps {
   version: Version;
@@ -11,6 +12,11 @@ interface OwnProps {
 const NotFoundPageComponent: React.FunctionComponent<OwnProps> = ({
   version
 }) => {
+  const handleError = useErrorHandler();
+  useEffect(() => {
+    handleError(new PageNotFoundError());
+  });
+
   return (
     <>
       <h1>Not found</h1>
