@@ -1,3 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Container /> should render correctly 1`] = `ShallowWrapper {}`;
+exports[`<Container /> should render correctly 1`] = `
+<div
+  className="container flex mt-16"
+>
+   
+  <h1>
+    Hello
+  </h1>
+   
+</div>
+`;

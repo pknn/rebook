@@ -6,9 +6,8 @@
     "build": "tsc && vite build",
     "serve": "vite preview",
     "lint": "eslint --fix src",
-    "test": "jest",
-    "test:update": "jest --updateSnapshot",
-    "test:coverage": "jest --coverage"
+    "test": "jest --update-snapshot",
+    "test:coverage": "yarn test --coverage"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.1",

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavigationItem /> when it is not the current route should render correctly 1`] = `
+<li
+  className="mx-2 text-base text-gray-600 hover:text-yellow-500"
+>
+  <Link
+    to="mockPath"
+  >
+    mockTitle
+  </Link>
+</li>
+`;
+
+exports[`<NavigationItem /> when it is the current route should render correctly 1`] = `
+<li
+  className="mx-2 text-base text-yellow-500"
+>
+  <Link
+    to="mockPath"
+  >
+    mockTitle
+  </Link>
+</li>
+`;
