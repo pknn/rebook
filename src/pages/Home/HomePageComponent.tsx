@@ -1,18 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-export interface HomePageComponentProps {
-  handlePageLoad: () => void;
-}
-
-const HomePageComponent: React.FC<HomePageComponentProps> = ({
-  handlePageLoad
-}) => {
-  useEffect(() => {
-    setTimeout(() => {
-      handlePageLoad();
-    }, 3000);
-  });
-
+const HomePageComponent: React.FC = () => {
   return <div>HomePage</div>;
 };
 
