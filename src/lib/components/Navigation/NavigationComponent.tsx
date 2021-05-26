@@ -1,12 +1,8 @@
 import React from 'react';
-import { Link } from 'lib/types/navigation';
+import routesMap from 'router/routesMap';
 
-interface NavigationProps {
-  links: Link[];
-}
-
-const NavigationComponent: React.FC<NavigationProps> = ({ links }) => {
-  const linkComponents = links.map((link) => <li>{link.title}</li>);
+const NavigationComponent: React.FC = () => {
+  const linkComponents = routesMap.map((route) => <li>{route.title}</li>);
   return <div>{linkComponents}</div>;
 };
 

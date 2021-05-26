@@ -1,13 +1,12 @@
 import React from 'react';
-import { ErrorBoundary } from 'react-error-boundary';
-import Container from 'lib/components/Container';
 import { Routes } from 'router/index';
-
-import ErrorPage from './pages/Error';
+import ErrorBoundary from 'lib/errorBoundary';
+import Container from 'lib/components/Container';
+import Navigation from 'lib/components/Navigation';
 
 const App: React.FC = () => {
   return (
-    <ErrorBoundary FallbackComponent={ErrorPage}>
+    <ErrorBoundary>
       <Container>
         <Routes />
       </Container>
