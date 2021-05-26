@@ -1,13 +1,9 @@
 import React from 'react';
-import { Link } from 'lib/types/navigation';
+import routesMap from 'router/routesMap';
 import NavigationComponent from './NavigationComponent';
 
-interface NavigationProps {
-  links: Link[];
-}
-
-const Navigation: React.FC<NavigationProps> = ({ links }) => {
-  return <NavigationComponent links={links} />;
+const Navigation: React.FC = () => {
+  return <NavigationComponent routes={routesMap} />;
 };
 
 export default Navigation;

@@ -1,7 +1,7 @@
 import HomePage from '../pages/Home';
 import NotFoundPage from '../pages/NotFound';
 
-interface Route {
+export interface Route {
   path: string;
   title: string;
   exact?: boolean;
