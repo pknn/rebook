@@ -1,3 +1,3 @@
 module.exports = {
-  setupFilesAfterEnv: ['./.test-setup/enzyme.config.ts']
+  setupFilesAfterEnv: ['./enzyme.config.ts']
 }
