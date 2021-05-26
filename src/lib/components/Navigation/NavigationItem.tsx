@@ -12,7 +12,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({
   isCurrent
 }) => (
   <li
-    className={`mx-2 p-1 text-base ${
+    className={`mx-2 text-base ${
       isCurrent ? 'text-yellow-500' : 'text-gray-600 hover:text-yellow-500'
     }`}
   >
