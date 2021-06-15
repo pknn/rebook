@@ -2,12 +2,10 @@
 
 exports[`<Container /> should render correctly 1`] = `
 <div
-  className="container flex mt-16"
+  className="container flex mt-10"
 >
-   
   <h1>
     Hello
   </h1>
-   
 </div>
 `;

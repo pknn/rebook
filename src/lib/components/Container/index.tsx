@@ -1,7 +1,5 @@
-import React from 'react';
+import tw from 'tailwind-styled-components';
 
-const Container: React.FC = ({ children }) => {
-  return <div className="container flex mt-16"> {children} </div>;
-};
+const Container = tw.div`container flex mt-10`;
 
 export default Container;
